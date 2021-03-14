@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootsrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <title>QLDT PTIT</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="mar-30 d-flex">
+          <a class="navbar-brand" href="/">
+            <img src="assets/image/Logo_PTIT.jpg" alt="" class="navbar-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Thông tin lớp giảng dạy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="app">
+        <div class="mar-30">
+          <div class="row mt-4">
+            <div class="col-lg-3">
+              <form class = "form-subject">
+                <div class="form-group">
+                  <label>Chọn môn giảng dạy</label>
+                  <select class="form-control" autofocus>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button class="btn btn-primary">Chọn</button>
+              </form>
+            </div>
+
+            <div class="col-lg-3">
+              <form class = "form-class">
+                <div class="form-group">
+                  <label>Chọn lớp học phần</label>
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button class="btn btn-primary">Chọn</button>
+              </form>
+            </div>
+          </div>
+  
+          <div class="row">
+            <table class="table mt-4">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">STT</th>
+                  <th scope="col">Họ tên</th>
+                  <th scope="col">MSV</th>
+                  <th scope="col">Điểm CC</th>
+                  <th scope="col">Điểm TP1</th>
+                  <th scope="col">Điểm TP2</th>
+                  <th scope="col">ĐIểm thi</th>
+                  <th scope="col">Điểm TB</th>
+                  <th>ĐKDT</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Phùng Xuân Nam</td>
+                  <td>B17DCCN450</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td>
+                    <a href="add.html">Sửa điểm</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td id ="name">Phùng Xuân Nam</td>
+                  <td id ="msv">B17DCCN450</td>
+                  <td id ="cc">10</td>
+                  <td id ="tp1">10</td>
+                  <td id ="tp2">10</td>
+                  <td id = "thi">10</td>
+                  <td id = "tb">10</td>
+                  <td id = "dkdt">1</td>
+                  <td>
+                    <a href="add.html">Sửa điểm</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <div class="row mt-5 other-form">
+            <div class="col-lg-4">
+              <h5>Phần trăm điểm thành phần:</h5>
+              <p class = "desc-percent"> (bạn có muốn thay đổi phần trăm các đầu điểm không? 
+                Nếu không hệ thống sẽ tính điểm với tương ứng với các giá trị bên dưới!)</p>
+              <form class="add-form" id = "form-1">
+                <div class="form-group">
+                  <label>% điểm CC</label>
+                  <input type="text" class="form-control" name ="cc" id = "percent-cc">
+                  <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label>% điểm TP1</label>
+                    <input type="text" class="form-control" name ="tp1" id = "percent-tp1">
+                    <span class="form-message"></span>
+                  </div>
+  
+                  <div class="form-group">
+                    <label>% điểm TP2</label>
+                    <input type="text" class="form-control" name ="tp2" id = "percent-tp2">
+                    <span class="form-message"></span>
+                  </div>
+  
+                  <div class="form-group">
+                    <label>% điểm thi</label>
+                    <input type="text" class="form-control" name ="thi" id = "percent-thi">
+                    <span class="form-message"></span>
+                  </div>
+  
+                <button type="submit" class="btn btn-primary">Xác Nhận</button>
+              </form>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <div class="d-flex">
+                <p>Số SV đủ điều kiện dự thi: </p> &nbsp; <p>2</p>
+              </div>
+              <div class="d-flex">
+                <p>Số SV không đủ điều kiện dự thi: </p> &nbsp; <p>2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

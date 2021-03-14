@@ -1,0 +1,81 @@
+nav{
+    padding: 16px 0 !important;
+    position:fixed !important; 
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+
+.app{
+    margin-top: 150px;
+}
+
+table,
+.add-form{
+    margin: 0 12px;
+}
+.navbar-logo{
+    width: 50px;
+    border-radius:50%;
+}
+
+.form-class,
+.form-subject{
+    display: flex;
+    align-items: center;
+}
+
+.add-form button,
+.form-class button,
+.form-subject button{
+    margin-top: 16px;
+    margin-left: 16px;
+    height: 40px;
+}
+th,td{
+    text-align: center;
+}
+
+.mar-30{
+    margin: 0 30px;
+}
+
+.other-form{
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+
+.desc-percent{
+    font-size: 12px;
+}
+
+/* add.html */
+
+.add-form{
+    /* display: flex; */
+    padding-left: 4px;
+    align-items: center;
+}
+
+.add-form .form-group{
+    margin-right: 16px;
+}
+
+/* validate */
+
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 0 0;
+  }
